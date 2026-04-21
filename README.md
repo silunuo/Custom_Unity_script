@@ -1,13 +1,6 @@
 # Custom_Unity_script
 
-一个给独立开发者用的 Unity 通用脚本仓库，主打“复制即用”。  
-每个模块尽量做到：
-
-- 直接拷进项目就能接
-- 有单独 README 讲清接法
-- 保持小而实用，不一上来堆太重
-
-当前仓库以基础设施和常用管理器为主，先解决这些高频问题：
+已完成
 
 - 音频管理
 - 对象池
@@ -59,66 +52,12 @@ Script/
 
 ---
 
-## 怎么用
-
-### 方式一：只拿单个模块
-
-适合你只想解决一个问题。
-
-例子：
-
-- 只想接音频，就拷 `Script/audio/`
-- 只想接对象池，就拷 `Script/ObjectP/`
-- 只想接事件总线，就拷 `Script/EventBus/`
-
-### 方式二：组合多个模块
-
-适合小项目快速搭底子。
-
-一套常见组合：
-
-- `audio`：管理 BGM / SFX
-- `ObjectP`：管理子弹、特效
-- `SaveData`：管理存档
-- `SceneFlow`：做切场景和加载页
-- `EventBus`：给模块间发通知
-
----
-
 ## 示例和实验区
 
-`Script/Example/` 下面放的是示例脚本或还没完全泛化的内容。
+`Script/Example/` 
 
 当前示例：
 
-- `Script/Example/OrbitAnimation.cs`：一个径向展开动画脚本，先当示例保留，不放进主推通用模块列表
+- `Script/Example/OrbitAnimation.cs`：一个径向展开动画脚本
 
 ---
-
-## 当前建议
-
-如果你是第一次拿这个仓库，推荐先看这几个：
-
-1. `ObjectPool`
-2. `AudioManager`
-3. `SaveManager`
-4. `EventBus`
-5. `SceneFlow`
-
----
-
-## 下一步候选
-
-后面准备继续补这些方向：
-
-- `TimerKit`：延迟调用、循环任务、冷却器
-- `Localization`：轻量本地化键值读取
-- `Addressables` 轻封装：异步加载、缓存、释放
-
----
-
-## 说明
-
-- 目标 Unity 版本先按 `2021.3 LTS+`
-- 先不做 UPM 和示例工程，继续走“复制即用”
-- 现阶段优先做通用基础设施，不做太重的编辑器工具
